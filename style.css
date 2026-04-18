@@ -1,21 +1,21 @@
 :root {
-    /* Colors - Vibrant Orange, Blue, Pink Theme */
-    --primary: #f97316; /* Orange */
-    --primary-light: #fb923c;
-    --secondary: #3b82f6; /* Blue */
+    /* Colors - Amber, Cyan, Pink Theme */
+    --primary: #f59e0b; /* Amber */
+    --primary-light: #fbbf24;
+    --secondary: #22d3ee; /* Cyan */
     --accent: #ec4899; /* Pink */
     
-    --bg-color: #050505;
-    --bg-surface: #111111;
-    --bg-soft: #0a0a0a;
+    --bg-color: #111827;
+    --bg-surface: #1f2937;
+    --bg-soft: #0f172a;
     
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --border-color: #262626;
+    --text-main: #f9fafb;
+    --text-muted: #9ca3af;
+    --border-color: #374151;
     
     /* Gradients */
     --gradient-text: linear-gradient(135deg, var(--primary), var(--accent), var(--secondary));
-    --gradient-bg: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(59, 130, 246, 0.15), transparent);
+    --gradient-bg: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(34, 211, 238, 0.15), transparent);
     --btn-gradient: linear-gradient(135deg, var(--primary), var(--accent));
     
     /* Typography */
@@ -24,7 +24,7 @@
     
     /* Spacing & Shadows */
     --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
-    --shadow-hover: 0 20px 40px -10px rgba(249, 115, 22, 0.25);
+    --shadow-hover: 0 20px 40px -10px rgba(245, 158, 11, 0.25);
     --radius-lg: 24px;
     --radius-md: 16px;
     --radius-sm: 8px;
@@ -159,12 +159,12 @@ img {
 .btn-primary {
     background: var(--btn-gradient);
     color: white;
-    box-shadow: 0 4px 15px rgba(249, 115, 22, 0.2);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
 }
 
 .btn-primary:hover::before {
@@ -408,7 +408,7 @@ img {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    border: 1px solid rgba(249, 115, 22, 0.2);
+    border: 1px solid rgba(245, 158, 11, 0.2);
     z-index: 2;
     animation: float 6s ease-in-out infinite;
 }
@@ -503,7 +503,7 @@ img {
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
-    border-color: rgba(249, 115, 22, 0.2);
+    border-color: rgba(245, 158, 11, 0.2);
 }
 
 .clickable-card {
@@ -524,7 +524,7 @@ img {
 }
 
 .service-card:hover .service-num {
-    color: rgba(249, 115, 22, 0.05);
+    color: rgba(245, 158, 11, 0.05);
 }
 
 .service-card h3 {
@@ -570,10 +570,10 @@ img {
 }
 
 .filter-btn.active {
-    background: #3b82f6;
+    background: #22d3ee;
     color: white;
-    border-color: #3b82f6;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    border-color: #22d3ee;
+    box-shadow: 0 4px 15px rgba(34, 211, 238, 0.3);
 }
 
 .projects-grid {
@@ -769,9 +769,9 @@ img {
 
 .tool-tag {
     padding: 0.75rem 1.5rem;
-    background: rgba(249, 115, 22, 0.08); /* Soft accent */
+    background: rgba(245, 158, 11, 0.08); /* Soft accent */
     color: var(--text-main);
-    border: 1px solid rgba(249, 115, 22, 0.25);
+    border: 1px solid rgba(245, 158, 11, 0.25);
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 500;
@@ -780,11 +780,11 @@ img {
 }
 
 .tool-tag:hover {
-    background: rgba(249, 115, 22, 0.2);
+    background: rgba(245, 158, 11, 0.2);
     border-color: var(--primary);
     color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.2);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.2);
 }
 
 /* Contact Section */
