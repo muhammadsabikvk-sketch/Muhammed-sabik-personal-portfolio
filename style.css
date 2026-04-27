@@ -168,7 +168,7 @@ img {
 
 .btn-primary {
     background: var(--btn-gradient);
-    color: white;
+    color: #141417;
     box-shadow: 0 4px 15px rgba(220, 225, 232, 0.2);
 }
 
@@ -845,7 +845,7 @@ img {
 
 .contact-item:hover .icon-box {
     background: var(--primary);
-    color: white;
+    color: #141417;
     transform: translateY(-3px);
 }
 
@@ -971,6 +971,7 @@ footer {
 
 .social-links a:hover {
     background: var(--primary);
+    color: #141417;
     transform: translateY(-3px);
 }
 
