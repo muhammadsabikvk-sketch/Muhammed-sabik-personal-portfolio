@@ -1,38 +1,38 @@
 :root {
-    /* Colors - Vibrant Mesh Gradient Theme */
-    --primary: #3b82f6; /* Blue */
-    --primary-light: #60a5fa;
-    --secondary: #f59e0b; /* Amber */
-    --accent: #ef4444; /* Coral Red */
-    --highlight: #a855f7; /* Purple */
+    /* Colors - Obsidian & Silver Glassy Theme */
+    --primary: #dce1e8; /* Bright Silver */
+    --primary-light: #f5f7fa; /* White Glass */
+    --secondary: #b4bcc8; /* Steel Silver */
+    --accent: #8b95a5;  /* Deep Steel */
+    --highlight: #ffffff; /* Pure White */
     
-    --bg-color: #050505;
-    --bg-surface: #121212;
-    --bg-soft: #0a0a0a;
+    --bg-color: #0a0a0c; /* Obsidian */
+    --bg-surface: #141417; /* Slate Surface */
+    --bg-soft: #0e0e11; 
     
-    --text-main: #ffffff;
-    --text-muted: #a1a1aa;
-    --border-color: #27272a;
+    --text-main: #FAFAFA;
+    --text-muted: #8a8d93;
+    --border-color: #222226;
     
     /* Gradients */
-    --gradient-text: linear-gradient(135deg, var(--primary), var(--highlight), var(--accent));
-    --gradient-bg: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(168, 85, 247, 0.15), transparent);
-    --btn-gradient: linear-gradient(135deg, var(--primary), var(--highlight));
+    --gradient-text: linear-gradient(135deg, var(--primary-light), var(--primary), var(--accent));
+    --gradient-bg: linear-gradient(135deg, rgba(220, 225, 232, 0.05), rgba(192, 192, 192, 0.02), transparent);
+    --btn-gradient: linear-gradient(135deg, var(--primary), var(--accent));
     
-    /* Dynamic Mesh Spots */
-    --mesh-1: radial-gradient(at 10% 20%, rgba(59, 130, 246, 0.1) 0px, transparent 50%);
-    --mesh-2: radial-gradient(at 80% 10%, rgba(245, 158, 11, 0.08) 0px, transparent 50%);
-    --mesh-3: radial-gradient(at 50% 50%, rgba(239, 68, 68, 0.08) 0px, transparent 50%);
-    --mesh-4: radial-gradient(at 20% 80%, rgba(168, 85, 247, 0.08) 0px, transparent 50%);
-    --mesh-5: radial-gradient(at 90% 90%, rgba(59, 130, 246, 0.1) 0px, transparent 50%);
+    /* Minimalist Glows (Replacing loud meshes) */
+    --mesh-1: radial-gradient(at 0% 0%, rgba(220, 225, 232, 0.03) 0px, transparent 60%);
+    --mesh-2: radial-gradient(at 100% 0%, rgba(192, 192, 192, 0.02) 0px, transparent 50%);
+    --mesh-3: none;
+    --mesh-4: radial-gradient(at 0% 100%, rgba(220, 225, 232, 0.02) 0px, transparent 40%);
+    --mesh-5: none;
     
     /* Typography */
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
     
     /* Spacing & Shadows */
     --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
-    --shadow-hover: 0 20px 40px -10px rgba(59, 130, 246, 0.25);
+    --shadow-hover: 0 20px 40px -10px rgba(220, 225, 232, 0.15);
     --radius-lg: 24px;
     --radius-md: 16px;
     --radius-sm: 8px;
@@ -169,12 +169,12 @@ img {
 .btn-primary {
     background: var(--btn-gradient);
     color: white;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
+    box-shadow: 0 4px 15px rgba(220, 225, 232, 0.2);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+    box-shadow: 0 8px 25px rgba(220, 225, 232, 0.3);
 }
 
 .btn-primary:hover::before {
@@ -409,43 +409,67 @@ img {
 
 .floating-icon {
     position: absolute;
-    background: rgba(21, 10, 36, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    padding: 1rem;
-    box-shadow: var(--shadow-soft);
+    padding: 0;
+    box-shadow: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    border: 1px solid rgba(245, 158, 11, 0.2);
+    border: none;
+    background: transparent;
+    backdrop-filter: none;
     z-index: 2;
     animation: float 6s ease-in-out infinite;
 }
 
 .icon-figma {
-    top: 10%;
-    left: -5%;
-    color: #F24E1E;
+    top: 5%;
+    left: -8%;
     animation-delay: 0s;
 }
 
-.icon-ps {
-    bottom: 20%;
-    right: -5%;
-    color: #31A8FF;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    animation-delay: 2s;
+.icon-ai {
+    top: 45%;
+    left: -12%;
+    animation-delay: 1.5s;
 }
 
-.icon-design {
-    top: 50%;
-    left: -10%;
-    color: var(--accent);
-    animation-delay: 4s;
+.icon-ps {
+    bottom: 10%;
+    right: -8%;
+    animation-delay: 3s;
 }
+
+.icon-xd {
+    top: 25%;
+    right: -12%;
+    animation-delay: 4.5s;
+}
+
+.icon-figma img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.icon-ps img, .icon-ai img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.icon-xd img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+
 
 @keyframes float {
     0% { transform: translateY(0px); }
@@ -513,7 +537,7 @@ img {
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
-    border-color: rgba(245, 158, 11, 0.2);
+    border-color: rgba(220, 225, 232, 0.2);
 }
 
 .clickable-card {
@@ -534,7 +558,7 @@ img {
 }
 
 .service-card:hover .service-num {
-    color: rgba(245, 158, 11, 0.05);
+    color: rgba(220, 225, 232, 0.05);
 }
 
 .service-card h3 {
@@ -581,9 +605,10 @@ img {
 
 .filter-btn.active {
     background: var(--primary);
-    color: white;
+    color: #141417; /* Dark text for contrast against silver */
+    font-weight: 800;
     border-color: var(--primary);
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 15px rgba(220, 225, 232, 0.3);
 }
 
 .projects-grid {
@@ -781,9 +806,9 @@ img {
 
 .tool-tag {
     padding: 0.75rem 1.5rem;
-    background: rgba(245, 158, 11, 0.08); /* Soft accent */
+    background: rgba(220, 225, 232, 0.08); /* Soft accent */
     color: var(--text-main);
-    border: 1px solid rgba(245, 158, 11, 0.25);
+    border: 1px solid rgba(220, 225, 232, 0.25);
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 500;
@@ -792,11 +817,11 @@ img {
 }
 
 .tool-tag:hover {
-    background: rgba(245, 158, 11, 0.2);
+    background: rgba(220, 225, 232, 0.2);
     border-color: var(--primary);
     color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.2);
+    box-shadow: 0 8px 25px rgba(220, 225, 232, 0.2);
 }
 
 /* Contact Section */
