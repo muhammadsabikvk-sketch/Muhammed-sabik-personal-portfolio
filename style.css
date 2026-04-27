@@ -648,6 +648,22 @@ img {
     font-weight: 800;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.project-card.light-card h3 ion-icon {
+    font-size: 1rem;
+    opacity: 0.5;
+    transition: var(--transition);
+}
+
+.project-card:hover h3 ion-icon {
+    opacity: 1;
+    transform: translate(2px, -2px);
+    color: var(--primary);
 }
 
 .project-card.light-card p {
@@ -655,12 +671,15 @@ img {
 }
 
 .project-card {
+    display: block; /* Ensure it behaves as a link wrapper */
     background: var(--bg-surface);
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-soft);
     transition: var(--transition);
     border: 1px solid var(--border-color);
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-card:hover {
@@ -690,46 +709,9 @@ img {
     transform: scale(1.05);
 }
 
+/* Overlay removed as requested */
 .project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(15, 23, 42, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: var(--transition);
-    backdrop-filter: blur(2px);
-}
-
-.project-card:hover .project-overlay {
-    opacity: 1;
-}
-
-.view-btn {
-    width: 60px;
-    height: 60px;
-    background: var(--bg-surface);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color: var(--primary);
-    transform: scale(0.5);
-    transition: var(--transition);
-}
-
-.project-card:hover .view-btn {
-    transform: scale(1);
-}
-
-.view-btn:hover {
-    background: var(--primary);
-    color: white;
+    display: none;
 }
 
 .project-info {
